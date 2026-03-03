@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>MSN Clone</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Segoe UI, Arial;
+    background:#f2f2f2;
+}
+
+/* Header */
+header{
+    background:white;
+    padding:12px 25px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    box-shadow:0 1px 5px rgba(0,0,0,0.1);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:bold;
+    color:#0078D7;
+}
+
+.search input{
+    width:400px;
+    padding:10px 15px;
+    border-radius:25px;
+    border:1px solid #ccc;
+}
+
+/* Menu */
+nav{
+    background:white;
+    padding:10px 30px;
+    border-bottom:1px solid #ddd;
+}
+
+nav a{
+    margin-right:18px;
+    text-decoration:none;
+    color:#333;
+    font-weight:600;
+}
+
+nav a:hover{
+    color:#0078D7;
+}
+
+/* Layout */
+.container{
+    max-width:1300px;
+    margin:20px auto;
+    display:flex;
+}
+
+/* Sidebar */
+.sidebar{
+    width:260px;
+    background:white;
+    padding:15px;
+    border-radius:12px;
+    height:fit-content;
+}
+
+.publisher{
+    padding:8px 0;
+    border-bottom:1px solid #eee;
+}
+
+/* Main news */
+.main{
+    flex:1;
+    margin:0 20px;
+}
+
+/* Card news */
+.news{
+    background:white;
+    border-radius:12px;
+    padding:15px;
+    margin-bottom:15px;
+    display:flex;
+    justify-content:space-between;
+    transition:0.2s;
+}
+
+.news:hover{
+    transform:translateY(-3px);
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.news img{
+    width:200px;
+    height:120px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.news-title{
+    font-size:18px;
+    font-weight:600;
+    margin-bottom:6px;
+}
+
+.meta{
+    color:gray;
+    font-size:13px;
+}
+
+/* Big news */
+.big-news{
+    background:white;
+    border-radius:12px;
+    margin-bottom:20px;
+    overflow:hidden;
+}
+
+.big-news img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+}
+
+.big-content{
+    padding:15px;
+}
+
+.big-title{
+    font-size:22px;
+    font-weight:bold;
+}
+
+/* Right trending */
+.trending{
+    width:260px;
+}
+
+.trending-box{
+    background:white;
+    border-radius:12px;
+    padding:15px;
+}
+
+.trend{
+    padding:10px 0;
+    border-bottom:1px solid #eee;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">MSN News</div>
+<div class="search">
+<input type="text" placeholder="Tìm kiếm trên web">
+</div>
+</header>
+
+<nav>
+<a href="#">Khám phá</a>
+<a href="#">Tin tức</a>
+<a href="#">Thế giới</a>
+<a href="#">Giải trí</a>
+<a href="#">Công nghệ</a>
+<a href="#">Thể thao</a>
+<a href="#">Phong cách sống</a>
+</nav>
+
+<div class="container">
+
+<!-- Sidebar -->
+<div class="sidebar">
+<h3>Nhà phát hành</h3>
+<div class="publisher">VnExpress</div>
+<div class="publisher">Tuổi Trẻ</div>
+<div class="publisher">Thanh Niên</div>
+<div class="publisher">Lao Động</div>
+<div class="publisher">VTC News</div>
+</div>
+
+<!-- Main -->
+<div class="main">
+
+<div class="big-news">
+<img src="https://picsum.photos/900/500">
+<div class="big-content">
+<div class="big-title">
+Tin nóng hôm nay: Công nghệ AI thay đổi thế giới
+</div>
+<div class="meta">5 phút đọc</div>
+</div>
+</div>
+
+<!-- Many news -->
+<div class="news">
+<div>
+<div class="news-title">Chủ tịch FIFA đề xuất luật mới</div>
+<div class="meta">3 phút đọc</div>
+</div>
+<img src="https://picsum.photos/300/200?1">
+</div>
+
+<div class="news">
+<div>
+<div class="news-title">16 đại học công bố học phí</div>
+<div class="meta">3 phút đọc</div>
+</div>
+<img src="https://picsum.photos/300/200?2">
+</div>
+
+<div class="news">
+<div>
+<div class="news-title">Laptop mới dành cho sinh viên</div>
+<div class="meta">4 phút đọc</div>
+</div>
+<img src="https://picsum.photos/300/200?3">
+</div>
+
+<div class="news">
+<div>
+<div class="news-title">Du lịch Việt Nam tăng mạnh</div>
+<div class="meta">3 phút đọc</div>
+</div>
+<img src="https://picsum.photos/300/200?4">
+</div>
+
+<div class="news">
+<div>
+<div class="news-title">Game mới sắp ra mắt</div>
+<div class="meta">2 phút đọc</div>
+</div>
+<img src="https://picsum.photos/300/200?5">
+</div>
+
+<div class="news">
+<div>
+<div class="news-title">Internet tốc độ cao thế hệ mới</div>
+<div class="meta">4 phút đọc</div>
+</div>
+<img src="https://picsum.photos/300/200?6">
+</div>
+
+<div class="news">
+<div>
+<div class="news-title">AI đang thay đổi giáo dục</div>
+<div class="meta">3 phút đọc</div>
+</div>
+<img src="https://picsum.photos/300/200?7">
+</div>
+
+</div>
+
+<!-- Trending -->
+<div class="trending">
+<div class="trending-box">
+<h3>Xu hướng</h3>
+<div class="trend">Tin nóng hôm nay</div>
+<div class="trend">World Cup</div>
+<div class="trend">Công nghệ AI</div>
+<div class="trend">Điện thoại mới</div>
+<div class="trend">Game 2026</div>
+</div>
+</div>
+
+</div>
+
+</body>
+</html>
